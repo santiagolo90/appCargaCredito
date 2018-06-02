@@ -1,0 +1,152 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+  crossorigin="anonymous">
+
+
+<ion-header>
+  <ion-navbar transparent>
+    <ion-title>Inicio de secion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="loginAnimacion">
+
+
+  <ion-card>
+
+    <ion-card-content>
+      <ion-list inset>
+        <ion-item>
+          <ion-label floating>Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="usuario"> </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="clave"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div padding>
+    <button ion-button round full large icon-left (click)="iniciarSesion()">
+      <ion-icon type="submit" name="md-log-in"></ion-icon> iniciar sesion
+    </button>
+  </div>
+
+
+  <ion-list style="width:100%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold">
+    <ion-item style="width:90%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold">
+      <ion-label>Seleccionar Usuario</ion-label>
+      <ion-select style="width:50%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold" name="firstField" [(ngModel)]="usuarioSeleccionado"
+        (ionChange)="SeleccionarUsuario()">
+        <ion-option value="admin">admin</ion-option>
+        <ion-option value="invitado">invitado</ion-option>
+        <ion-option value="usuario">usuario</ion-option>
+        <ion-option value="anonimo">anonimo</ion-option>
+        <ion-option value="tester">tester</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+
+</ion-content> -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top">
+        
+      </div>
+      <img src="assets/img/Logo1.png">
+      <div class="Aligner-item Aligner-item--bottom">
+        
+      </div>
+    </div>
+  </div>
+<ion-header>
+    <ion-navbar transparent>
+      <ion-title>Iniciar sesión</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content class="login-content" padding>
+  <!-- <H1>Iniciar sesion</H1> -->
+
+  <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img src="https://image.ibb.co/igeJpH/logo.png" />
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <!-- <ion-row class="logo-row">
+      <ion-col width-67>
+        <img class="Logo" src="https://image.ibb.co/igeJpH/logo.png" />
+      </ion-col>
+    </ion-row> -->
+
+  <div class="login-box">
+    <!-- <form (ngSubmit)="login()" #registerForm="ngForm"> -->
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+
+          <ion-item>
+            <ion-label floating>Usuario</ion-label>
+            <ion-input type="text" [(ngModel)]="usuario"> </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="clave"></ion-input>
+          </ion-item>
+
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+
+    <div class="selectUsuario">
+      <!--  -->
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-item>
+              <ion-label>Seleccionar Usuario</ion-label>
+              <ion-select name="firstField" [(ngModel)]="usuarioSeleccionado" (ionChange)="SeleccionarUsuario()">
+                <ion-option value="admin">admin</ion-option>
+                <ion-option value="invitado">invitado</ion-option>
+                <ion-option value="usuario">usuario</ion-option>
+                <ion-option value="anonimo">anonimo</ion-option>
+                <ion-option value="tester">tester</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <!--  -->
+    </div>
+
+    <ion-row>
+      <ion-col class="signup-col">
+        <button ion-button large full icon-left (click)="iniciarSesion()" class="submit-btn" type="submit">
+          <ion-icon name="md-log-in"></ion-icon>Iniciar sesión
+        </button>
+
+        <button ion-button class="register-btn" block clear (click)="registrarUsuario()" >Crear una cuenta</button>
+      </ion-col>
+    </ion-row>
+    <!--       
+    </form> -->
+
+  </div>
+
+</ion-content>

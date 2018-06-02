@@ -1,0 +1,105 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+//Titulo
+.alert-md .alert-title {
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #263238;
+}
+//subtitulo
+.alert-md .alert-message {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    max-height: 240px;
+    font-size: 15px;
+    color: #263238;
+}
+//boton
+.alert-md .alert-button-group {
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    color: #263238;
+    padding: 8px 8px 8px 24px;
+}
+//boton
+.alert-md .alert-button {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    color: whitesmoke;
+    background-color: rgb(4, 130, 172);
+    padding: 20px;
+}
+.alert-md .alert-button:disabled {
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    background-color: #00695c;
+}
+.alert-md .alert-button:active {
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    background-color: #00695c;
+}
+.alert-md .alert-button:hover {
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    background-color: #00695c;
+}
+.errorAlert{
+    > div{
+        font-family: 'Ubuntu', sans-serif;
+      background-color:#CC0000!important;
+      color: whitesmoke;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }
+.warningAlert{
+    > div{
+        font-family: 'Ubuntu', sans-serif;
+      background-color:#FF8800!important;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }
+.infoAlert{
+    > div{
+        font-family: 'Ubuntu', sans-serif;
+      background-color:#0099CC!important;
+      text-align: center;
+      font-weight: bold;
+      border-style: double;
+      border-color: #bbdefb;
+    }
+  }
+.succesAlert{
+    > div{
+        font-family: 'Ubuntu', sans-serif;
+      background-color:#007E33!important;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }

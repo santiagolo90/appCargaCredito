@@ -1,0 +1,85 @@
+
+page-credito {
+  font-family: 'Ubuntu', sans-serif;
+    .errorToast{
+        > div{
+          background-color:#CC0000!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .warningToast{
+        > div{
+          background-color:#FF8800!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .infoToast{
+        > div{
+          background-color:#0099CC!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .successToast{
+        > div{
+          background-color:#007E33!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .botonScan .button-md {
+        background: #3F729B;
+        border-radius: 10px !important;
+        border: 1px solid #3b3e3f;
+        height: 16.6rem;
+        font-size: 25px;
+      }
+      .botonScan .button-md:active {
+       background: #1C2331;
+     
+     }
+     .botonScan .button-md-secondary:hover:not(.disable-hover) {
+      background-color: #1C2331;
+      }
+      //texto toolbar
+      .toolbar-md-login .bar-button-clear-md, .toolbar-md-login .bar-button-default-md, .toolbar-md-login .bar-button-outline-md, .toolbar-md-login .toolbar-title-md {
+        color: #424242;
+      }
+
+
+      .login-content {
+        background: #4fc3f7;
+
+
+  
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+        }
+     
+        .logo-row {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+     
+        .login-box {
+          border-radius: 10px !important;
+          background-color: rgba(0, 0, 0, 0.329);
+          padding: 20px 20px 0px 20px;
+          // margin-top: 30px;
+          margin-top: 0px;
+        }
+        ion-item{
+          background-color: transparent
+        }
+
+
+     
+
+     
+
+      }
+
+}

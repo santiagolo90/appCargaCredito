@@ -1,0 +1,76 @@
+<!--
+  Generated template for the CreditoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<!-- <ion-header>
+    <ion-navbar transparent>
+      <ion-title>Carga de Credito</ion-title>
+    </ion-navbar>
+  </ion-header> -->
+<ion-header>
+  <ion-toolbar color="login">
+    <ion-navbar >
+      <ion-title >Carga de Crédito</ion-title>
+      <!-- <ion-buttons end>
+          <button ion-button icon-only>
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-buttons> -->
+    </ion-navbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="login-content" padding>
+  <div style="color: #424242" text-center class="texto">
+    <h3>Bienvenido </h3>
+    <h3>{{usuarioOnline}}</h3>
+    <h4>Pulsa escanear para cargar crédito</h4>
+
+  </div>
+  <div class="botonScan">
+    <button ion-button block color="secondary" icon-left (click)="scan()" >
+      <ion-icon name="md-qr-scanner"></ion-icon>Escanear código QR</button>
+  </div>
+
+    <!-- <ion-card>
+      <ion-card-content>
+        <ion-label *ngIf="creditoActual ==0">Credito Actual: Sin credito </ion-label>
+        <ion-label *ngIf="creditoActual > 0">Credito Actual: $ {{creditoActual}} </ion-label>
+      </ion-card-content>
+    </ion-card> -->
+
+     <div class="login-box">
+
+        <ion-row>
+          <ion-col>
+            <ion-list >
+              <ion-item>
+                <h1 *ngIf="creditoActual == 0" > Sin crédito  <ion-icon name="md-sad"></ion-icon></h1>
+                <h1 *ngIf="creditoActual > 0" >Crédito actual: $ {{creditoActual}} </h1>
+
+              </ion-item>   
+            </ion-list>
+    
+          </ion-col>
+        </ion-row>
+    
+      </div>
+
+
+
+    <ion-fab right bottom>
+        <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+        <ion-fab-list side="left">
+          <button ion-fab (click)="cerrarSesion()"><ion-icon name="md-log-out"></ion-icon></button>
+          <!-- <button ion-fab><ion-icon name="ios-download-outline"></ion-icon></button> -->
+          <button ion-fab (click)="scanDescargar()" ><ion-icon name="md-qr-scanner"></ion-icon>↓</button>
+          <!-- <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button> -->
+        </ion-fab-list>
+      </ion-fab>
+</ion-content>

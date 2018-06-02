@@ -1,0 +1,31 @@
+1.- Carga de crédito:
+Ingresar un usuario.
+Permite escanear un código QR encriptado.
+Si no lo cargó, se le carga crédito correspondiente que se acumulará en un visor de créditos.
+Si ya lo cargó, mostrará un mensaje que indique lo sucedido.
++ Verificar que el código QR esté almacenado en la base de datos.
+8c95def646b6127282ed50454b73240300dccabc =10
+ae338e4e0cbb4e4bcffaf9ce5b409feb8edd5172 = 50
+2786f4877b9091dcad7f35751bfcf5d5ea712b2f =100
+
+
+cosas a usar
+FABs M
+Toolbar
+Gestures 
+Segment 
+
+
+
+ use a CSS class to make the job, something like this inside your content:
+
+<ion-item class="item item-trns text-center">
+      I'm transparent!
+</ion-item>  
+And this on your style.css
+
+.item.item-trns {
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white; 
+}
